@@ -68,6 +68,7 @@
 .f-disp-content article p:not(p:first-child):last-of-type{
     width: 21vw;
     text-align: left;
+    margin-top: 30px;
 }
 .head-64 {
     font: 600 var(--font-size-heading1) var(--font-family-base);
@@ -85,7 +86,7 @@
 .text-m { font: 500 var(--font-size-article-heading) var(--font-family-base); }
 .text-bold-m { font: 600 var(--font-size-article-heading) var(--font-family-base); }
 .accent-font { font-family: var(--font-family-heading); }
-.accented-text { color: var(--accent-color) }
+
 .italic { font-style: italic; }
 
 
@@ -95,9 +96,10 @@
 .color-subarticle-text { color: var(--color-text) }
 .color-label { color: var(--color-label) }
 .color-head { color: var(--color-head) }
+.accented-text { color: var(--accent-color) }
 
-.btn-primary {
-    margin: 30px 0;
+.btn {
+    margin: 30px 0 0 0;
     background-color: var(--accent-color);
     padding: 20px 62px;
     border: solid var(--accent-color) 1px;
@@ -105,7 +107,6 @@
     text-transform: uppercase;
     font: var(--button-font);
     box-shadow: 0 0 30.6px 0 rgba(34, 46, 151, 44);
-    
 }
 
 .text-black { color: #000; }
@@ -171,6 +172,51 @@
     left: -500px;
     width: 1000px;
 }
+#ellipse-4 {
+    top: 2800px;
+    right: -500px;
+    width: 1000px;
+}
+#ellipse-5 {
+    top: 3400px;
+    left: -500px;
+    width: 1000px;
+}
+#ellipse-6 {
+    top: 4600px;
+    right: -500px; 
+    width: 1000px;
+}
+#ellipse-7 {
+    top: 5300px;
+    left: -500px;
+    width: 1000px;
+}
+#ellipse-8 {
+    top: 6000px;
+    right: -500px;
+    width: 1000px;
+}
+#ellipse-9 {
+    top: 6200px;
+    left: -500px;
+    width: 1000px;
+}
+#ellipse-10 {
+    top: 7000px;
+    left: 300px;
+    width: 1000px;
+}
+#ellipse-11 {
+    top: 7300px;
+    right: -500px;
+    width: 1000px;
+}
+#ellipse-12 {
+    top: 8000px;
+    left: -500px;
+    width: 1000px;
+}
 
 .third-display h1 {
     padding: 15vh 0;
@@ -215,6 +261,8 @@
     background-color: var(--bg-color);
     align-items: center;
     gap: 2vw;
+    position: relative;
+    z-index: 2;
 }
 .fourth-display h1 {
     text-align: right;
@@ -319,7 +367,22 @@
     display: grid; 
     grid-template-columns: 4fr 1fr;
 }
-
+.seventh-disp {
+    margin: 0 14vw;
+}
+.seventh-disp h1 {
+    text-align: start;
+    margin: 1vh 0;
+}
+#subhead {
+    margin-bottom: 3vh;
+    width: 46.5vw;
+}
+.result p {
+    color: #000;
+    width: fit-content;
+    margin: 1vh 0;
+}
 
 .result {
     margin-top: 20px;
@@ -328,20 +391,16 @@
 .hidden {
     display: none;
 }
-
-
-  label {
-    font-family: inter;
+.mt-3 {
+    margin: 5vh 0;
 }
-input {
-    font-family: Inter;
-}
+
 .form-group {
     display: flex;
     flex-direction: column;
 }
 select#tariffPlan {
-  width: 100%;
+    width: 43vw;
 }
 input {
     width: 60%;
@@ -367,10 +426,12 @@ div#businessType_chosen {
   /* Основной контейнер для одиночного выбора */
   .chosen-container-single .chosen-single {
     position: relative;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 16px;
     background-color: #fff;
+    min-width: 700px;
+    width: 41vw;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -379,11 +440,12 @@ div#businessType_chosen {
   
   /* Стилизация текста внутри одиночного выбора */
   .chosen-container-single .chosen-single span {
+    font: 400 var(--font-size-base) var(--font-family-base) ;
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000;
+    color: var(--color-article-text);
   }
   
   /* Декоративная стрелка для раскрывающегося списка */
@@ -537,7 +599,8 @@ select::-ms-expand {
 
 .container {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .form-container {
@@ -546,34 +609,39 @@ select::-ms-expand {
 }
 
 .result-container {
-        width: 30%;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 16px;
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding: 50px;
+        padding: 0 50px;
+        margin: -3vh 0 10vh;
 }
 
 .active-result em {
     color: #000;
 }
 
+#businessType option {
+    max-width: 0;
+}
+
 .form-group input, .form-group select {
     background-color: white; /* Белый фон для полей ввода */
     border: 2px solid #DFDFDF; /* Границы полей ввода */
-    height: 49px; /* Высота полей ввода */
-    width: 100%; /* Ширина полей ввода */
-    padding: 0 0px; /* Отступы внутри полей ввода */
+    border-radius: 16px;
+    min-width: 700px;
+    width: 41vw;
+    padding: 1rem; /* Отступы внутри полей ввода */
 }
 
 #calculateButton {
   cursor: pointer;
     border: 0;
     padding: 20px 62px;
-    background-color: #383ae6;
+    background-color: var(--color-article-text);
     flex: 1;
     box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
     border-radius:  16px;
@@ -591,7 +659,7 @@ select::-ms-expand {
   cursor: pointer;
     border: 0;
     padding: 20px 62px;
-    background-color: #383ae6;
+    background-color: var(--color-article-text);
     flex: 1;
     box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
     border-radius:  16px;
@@ -603,6 +671,7 @@ select::-ms-expand {
     text-transform: uppercase;
     font-family: "Open Sans";
     color: #fff;
+    margin: 0 0 5vh;
 }
 
 .chart-container {
@@ -613,4 +682,151 @@ select::-ms-expand {
 .chart-image {
   max-width: 100%; /* Ограничиваем максимальную ширину */
   height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+#cursor {
+    position: absolute;
+    right: 300px;
+    top: 6720px
+}
+.eighth-disp {
+    margin: 12vh 14vw;
+}
+.eighth-disp h1 {
+    text-align: start;
+    text-transform: uppercase;
+    margin: 5vh 0;
+    font-size: 52px;
+}
+.steps div {
+    margin: -11vh 0 5vh 4.5vw;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    position: relative;
+    border-radius: 16px;
+    padding: 3vh 2vw;
+    width: 25vw;
+}
+.steps div h2 {
+    font-weight: 500;
+    margin: 5px 0;
+}
+.steps:nth-of-type(2) {
+    position: relative;
+    left: 37vw;
+    top: -120px;
+}
+.steps:nth-of-type(4) {
+    position: relative;
+    left: 40vw;
+    top: -250px;
+}
+.steps:nth-of-type(3) {
+    position: relative;
+    top: -140px;
+}
+.ninth-disp {
+    margin: 0 14vw;
+    display: grid;
+    grid-template-areas: 
+    'a a a'
+    'b b d'
+    'c c d';
+}
+.ninth-disp h1 {
+    text-align: start;
+    grid-area: a;
+}
+.ninth-disp p.text-xs:nth-of-type(1){
+    grid-area: b;
+    color: var(--color-article-text);
+    margin: 2vh 0;
+}
+.ninth-disp img {
+    grid-area: c;
+}
+.ninth-disp form {
+    display: flex;
+    flex-direction: column;
+    margin: -30px 0 0 300px;
+}
+.ninth-disp form input, .ninth-disp form textarea {
+        color: #000;
+        background-color: white; /* Белый фон для полей ввода */
+        border: 2px solid #DFDFDF; /* Границы полей ввода */
+        border-radius: 16px;
+        width: 30vw;
+        margin: 0.5rem 0;
+        padding: 1rem; /* Отступы внутри полей ввода */
+}
+.ninth-disp form textarea {
+    resize: none;
+    overflow-y: auto;
+    text-wrap: wrap;
+    height: 10vh;
+}
+
+.ninth-disp .confirms-link{
+    font: 400 14px "Inter";
+    text-decoration: underline;
+}
+.ninth-disp .confirms {
+    font: 400 14px "Inter";
+    padding: 3vh 0 0;
+    
+}
+.ninth-disp form div {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+}
+.ninth-disp img {
+    margin: -250px 0 0;
+}
+footer {
+    background-color: var(--bg-color);
+    display: flex;
+    padding: 10vh 5vw;
+    justify-content: space-between;
+}
+footer .cont-col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+    width: 15vw;
+}
+footer .cont-col-1 div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.copyrights {
+    position: absolute;
+    bottom: -8000px;
+    color: #777777;
+    font: 400 16px var(--font-family-base);
+}
+.cont-col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 0 0 -200px;
+}
+.policy {
+    text-decoration: underline;
+}
+.cont-col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.socials {
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+.mailto {
+    text-decoration: underline;
+    color: var(--highlight-color);
 }

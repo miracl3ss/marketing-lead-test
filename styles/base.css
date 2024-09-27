@@ -33,10 +33,12 @@
   }
 
 html, body, * {
-    max-width: 1920px;
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: #fff;
     list-style-type: none;
+}
+html {
+  overflow-x: hidden;
 }
