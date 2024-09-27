@@ -19,6 +19,7 @@
     --font-size-heading3: 40px;
     --font-size-subheading: 24px;
     --font-size-article-heading: 32px;
+    --font-size-label: 16px;
     
     --button-font: 600 16px 'Open Sans';
 
@@ -26,11 +27,16 @@
     --color-subheading-text: #CACACA;
     --color-semivisible-text: #8E8E8E;
     --color-text: #DFDFDF;
+    --color-plug: #D9D9D9;
+    --color-label: #A6A6A6;
+    --color-head: #0F0F0F;
   }
 
 html, body, * {
+    max-width: 1920px;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    list-style-type: none;
 }

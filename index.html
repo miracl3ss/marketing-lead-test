@@ -21,6 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+<script src="\scripts\script.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,7 @@
             <span class="circles-bg"></span>
             <section class="f-disp-content">
                 <article>
-                    <h1 class="head-unbounded-64">Удаленный <p>отдел маркетинга</p>
+                    <h1 class="head-64 accent-font">Удаленный <p class="accent-font">отдел маркетинга</p>
                     </h1>
                     <p class="text-sm color-subheading">Умный маркетинг: от стратегии до первых клиентов с минимальными
                         затратами</p>
@@ -56,7 +59,7 @@
         </section>
 
         <section class="second-disp">
-            <h1 class="head-unbounded-64 text-black">Что мы предлагаем</h1>
+            <h1 class="head-64 accent-font text-black">Что мы предлагаем</h1>
             <div class="second-disp-container">
                 <article class="card-gallery">
                     <h2 class="text-sm">Управление социальными сетями</h2>
@@ -111,24 +114,24 @@
             </div>
         </section>
         <section class="third-display">
-            <h1 class="head-unbounded-64 text-black">Мы вам подходим, если вы...</h1>
+            <h1 class="head-64 accent-font text-black">Мы вам подходим, если вы...</h1>
             <div class="third-disp-container">
                 <article class="article">
                     <h2 class="text-m">Уже перевели бухгалтерию на аутсорс</h2>
                     <p class="text-xs color-article-text">Если вы ощутили выгоду от делегирования бухгалтерских задач и
                         хотите применить тот же подход к маркетингу.</p>
                 </article>
-                <article class="articles">
+                <article>
                     <h2 class="text-m text-black">цените прозрачность и контроль</h2>
                     <p class="text-xs color-article-text">Вам важно видеть четкую картину работы с регулярными отчетами
                         и иметь возможность влиять на процесс в любой момент.</p>
                 </article>
-                <article class="articles">
+                <article>
                     <h2 class="text-m text-black">нуждаетесь в быстром старте</h2>
                     <p class="text-xs color-article-text">У вас есть необходимость в запуске маркетинговой кампании с
                         минимальными временными затратами на организацию</p>
                 </article>
-                <article class="articles">
+                <article>
                     <h2 class="text-m">хотите сосредоточиться на основном бизнесе</h2>
                     <p class="text-xs color-article-text">Если вы ощутили выгоду от делегирования бухгалтерских задач и
                         хотите применить тот же подход к маркетингу.</p>
@@ -136,16 +139,19 @@
             </div>
         </section>
         <section class="fourth-display">
-            <h1 class="head-unbounded-64">Что делает нас особенными</h1>
-            <p class="text-xs ">Мы объединяем стратегическое планирование и тактические действия для достижения
+            <h1 class="head-64 accent-font">Что делает нас особенными</h1>
+            <p class="text-xs color-subarticle-text">Мы объединяем стратегическое планирование и тактические действия
+                для достижения
                 максимальных результатов. Наши 3 тарифа с фиксированными ценами позволяют выбрать оптимальное решение
                 под любые задачи и бюджет. А еще предоставляем постоянные консультации и поддержку, чтобы вы всегда были
                 в курсе и могли оперативно реагировать на изменения.</p>
         </section>
         <section class="fifth-display">
-            <h1 class="head-unbounded-64 text-black">Кейсы</h1>
+            <h1 class="head-64 accent-font text-black">Кейсы</h1>
             <p class="text-xs color-article-text">Посмотрите, как мы помогли другим компаниям достичь впечатляющих
-                результатов. В наших кейсах — реальные примеры роста продаж, увеличения трафика и улучшения позиций на
+                результатов.</p>
+            <p class="text-xs color-article-text">В наших кейсах — реальные примеры роста продаж, увеличения трафика и
+                улучшения позиций на
                 рынке.</p>
             <ul class="cases-container">
                 <li class="case-list text-black text-xs">Кейс #1 - НАЗВАНИЕ КОМПАНИИ</li>
@@ -155,8 +161,8 @@
             </ul>
             <article class="case">
                 <div class="case-container">
-                    <h2 class="head-unbounded-40 accented-text">Кейс #1</h2>\
-                    <h3 class="head-unbounded-48 ">Косметический салон AURA</h3>
+                    <h2 class="head-40 accent-font accented-text">Кейс #1</h2>
+                    <h3 class="head-48 accent-font">Косметический салон AURA</h3>
                     <p class="text-xs color-article-text">Diam consectetur consequat imperdiet risus et urna egestas
                         vitae. Tincidunt et purus ut adipiscing quam maecenas non. Sed diam eleifend morbi arcu velit
                         elementum egestas.</p>
@@ -167,8 +173,215 @@
                         <li class="text-xs color-article-text">Реклама в Яндекс, Google, VK, Facebook, Таргет.Мейл</li>
                     </ul>
                 </div>
-                <img src="#" class="placeholder">
+                <div class="plug"></div>
             </article>
+            <ul class="horizontal-list">
+                <li>
+                    <h3 class="text-m accent-font text-black">16.000</h3>
+                    <p class="text-xs accent-font text-black">новых подписчиков</p>
+                </li>
+                <li>
+                    <h3 class="text-m accent-font text-black">Более 100</h3>
+                    <p class="text-xs accent-font text-black">публикаций</p>
+                </li>
+                <li>
+                    <h3 class="text-m accent-font text-black">80.000</h3>
+                    <p class="text-xs accent-font text-black">новых клиентов</p>
+                </li>
+                <li>
+                    <h3 class="text-m accent-font text-black">15.000.000</h3>
+                    <p class="text-xs accent-font text-black">просмотров</p>
+                </li>
+                <li>
+                    <h3 class="text-m accent-font text-black">Более 100</h3>
+                    <p class="text-xs accent-font text-black">публикаций</p>
+                </li>
+            </ul>
+            <article class="plug-container">
+                <div class="plug"></div>
+                <div class="plug"></div>
+                <div class="plug"></div>
+                <p class="text-black text-xs">Реализация и разработка контент-плана</p>
+                <p class="text-black text-xs">График роста показателей</p>
+                <p class="text-black text-xs">График роста показателей</p>
+            </article>
+        </section>
+        <div class="accent-lines"></div>
+        <section class="sixth-disp">
+            <h1 class="head-64 accent-font">Наши тарифы</h1>
+            <p class="text-xs color-article-text">Выберите тариф, который идеально подходит для вашего бизнеса. </p>
+            <p class="color-article-text text-xs">Мы предлагаем 3 пакета с фиксированной стоимостью, которые включают
+                все необходимые услуги для эффективного продвижения. Созданный нами сайт остаётся вашим, даже если вы
+                решите прекратить сотрудничество через три месяца после заключения договора.</p>
+            <div class="article-container">
+                <article class="articles">
+                    <h2 class="accent-font text-m">Легок на подъем</h2>
+                    <p class="text-xxs">Специалистов: 3</p>
+                    <h3 class="text-bold-m">47 600 ₽ в месяц</h3>
+                    <ul class="list">
+                        <li class="text-xxs color-subarticle-text">Предоставляем ежемесячный детальный отчет о работе,
+                            эффективности рекламы и план работ.</li>
+                        <li class="text-xxs color-subarticle-text">Запустим рекламные кампании на подходящих площадках
+                            (Яндекс.Директ, VK, Авито, Telegram, MyTarget) с общим бюджетом до 1 000 000 ₽/мес.</li>
+                        <li class="text-xxs color-subarticle-text">Создадим сайт с уникальным дизайном на WordPress за
+                            первые 2 месяца.</li>
+                        <li class="text-xxs color-subarticle-text">Разработаем стратегию маркетинга: определим
+                            уникальные преимущества продукта, проанализируем конкурентов, создадим привлекательное
+                            предложение для целевой аудитории и разработаем эффективные каналы продвижения.</li>
+                    </ul>
+                    <p class="text-xxs italic color-label">+ 8 часов работы агентства на любые задачи.</p>
+                    <p class="text-xxs italic color-label">Консультации до 4 часов.</p>
+                </article>
+                <article class="articles">
+                    <h2 class="accent-font text-m">Широко шагая</h2>
+                    <p class="text-xxs">Специалистов: 5</p>
+                    <h3 class="text-bold-m">62 300 ₽ в месяц</h3>
+                    <ul class="list">
+                        <li class="text-xxs color-subarticle-text">Проведем исследование рынка и создадим детальный
+                            портрет целевой аудитории.</li>
+                        <li class="text-xxs color-subarticle-text">Сформируем маркетинговую стратегию, учитывая
+                            особенности и предпочтения клиентов.</li>
+                        <li class="text-xxs color-subarticle-text">Улучшим позиционирование и задействуем социальные
+                            сети для успешного продвижения.</li>
+                        <li class="text-xxs color-subarticle-text">Создадим сайт с уникальным дизайном на WordPress за
+                            первые 2 месяца.</li>
+                        <li class="text-xxs color-subarticle-text">Запустим рекламные кампании на подходящих площадках
+                            (Яндекс.Директ, VK, Авито, Telegram, MyTarget) с общим бюджетом до 1 000 000 ₽/мес.</li>
+                        <li class="text-xxs color-subarticle-text">Будем вести Instagram/Telegram/VK (до 15 постов и до
+                            20 сторис в месяц).</li>
+                        <li class="text-xxs color-subarticle-text">Два раза в месяц предоставляем детальный отчет о
+                            работе, эффективности рекламы и план работ.</li>
+                        <li class="text-xxs color-subarticle-text">Предоставим прикрепленного к проекту специалиста по
+                            рекламе и дизайнера.</li>
+                        <li class="text-xxs color-subarticle-text">Проведем аудит и доработаем фирменный стиль.</li>
+                    </ul>
+                    <p class="text-xxs italic color-label">+ 16 часов работы агентства на любые задачи.</p>
+                    <p class="text-xxs italic color-label">Консультации до 8 часов.</p>
+                </article>
+                <article class="articles">
+                    <div class="div-container">
+                        <h2 class="accent-font text-m">Дивный новый бренд</h2><img src="images/noto_fire.svg"
+                            alt="fire logo">
+                    </div>
+                    <p class="text-xxs">Специалистов: 9</p>
+                    <h3 class="text-bold-m">188 300 ₽ в месяц</h3>
+                    <ul class="list">
+                        <li class="text-xxs color-subarticle-text">Долгосрочная стратегия</li>
+                        <li class="text-xxs color-subarticle-text">Полиграфия</li>
+                        <li class="text-xxs color-subarticle-text">Разработка фирменного стиля</li>
+                        <li class="text-xxs color-subarticle-text">Разработаем долгосрочную стратегию, учитывая
+                            изменения рынка и экономические условия. Задействуем все доступные каналы для продвижения
+                            продукта. Найдем уникальные подходы для каждого сегмента аудитории. Руководители отделов
+                            лично курируют проект.</li>
+                        <li class="text-xxs color-subarticle-text">Создадим сайт с индивидуальным дизайном и сложным
+                            функционалом на любой платформе.</li>
+                        <li class="text-xxs color-subarticle-text">Проведем А/В тестирование сайта или лендинга.</li>
+                        <li class="text-xxs color-subarticle-text">Запустим рекламные кампании на подходящих площадках
+                            (Яндекс.Директ, VK, Авито, Telegram, MyTarget) с общим бюджетом до 1 000 000 ₽/мес.</li>
+                        <li class="text-xxs color-subarticle-text">Будем вести Instagram, Telegram, VK (до 30 постов в
+                            месяц, ежедневные сторис, одна фотосъемка в месяц).</li>
+                        <li class="text-xxs color-subarticle-text">Четыре раза в месяц будем присылать детальный отчет о
+                            работе, эффективности рекламы и план работ.</li>
+                        <li class="text-xxs color-subarticle-text">Создадим дополнительные рекламные материалы: КП,
+                            презентации, печатная продукция, рассылки.</li>
+                        <li class="text-xxs color-subarticle-text">Проведем аудит и доработаем фирменный стиль.</li>
+                    </ul>
+                    <p class="text-xxs italic color-label">+ 16 часов работы агентства на любые задачи.</p>
+                    <p class="text-xxs italic color-label">Консультации до 8 часов.</p>
+                </article>
+            </div>
+        </section>
+        <section class="seventh-disp">
+            <h1 class="head-64 color-head accent-font">Калькулятор выгоды</h1>
+            <p class="text-xs color-article-text">Узнайте, насколько вырастет прибыль вашей компании с нашей помощью.
+                Введите данные о своей сфере, количестве текущих лидов и среднем чеке, чтобы увидеть, как наши
+                маркетинговые решения могут увеличить ваши доходы. </p>
+            <div class="form-container">
+
+                <div class="form-group">
+                    <label for="businessType">Выберите вид деятельности:</label>
+                    <select id="businessType" class="form-control chosen-select">
+                        <option value="" class="text-black">-- Выберите --</option>
+                        <option value="E-commerce" class="text-black">Электронная коммерция</option>
+                        <option value="Autorepair" class="text-black">Автосервис / Товары для автомобилей</option>
+                        <option value="Agriculture" class="text-black">Агро-промышленность</option>
+                        <option value="Municipality" class="text-black">Муниципалитет / Власть</option>
+                        <option value="HomeFamily" class="text-black">Семья / Домашнее хозяйство</option>
+                        <option value="Leisure" class="text-black">Общественный досуг / Развлечения</option>
+                        <option value="Internet" class="text-black">Интернет / Информационные сети</option>
+                        <option value="EverydayServices" class="text-black">Повседневные, коммунальные и ритуальные услуги</option>
+                        <option value="OfficeEquipment" class="text-black">Бытовая, офисная и компьютерная техника</option>
+                        <option value="Religion" class="text-black">Религия / Культурные центры / Искусство</option>
+                        <option value="Furniture" class="text-black">Домашняя и офисная мебель / Материалы</option>
+                        <option value="Health" class="text-black">Медицинские услуги / Здоровье и красота</option>
+                        <option value="Metals" class="text-black">Металлы / Химические элементы / Топливо</option>
+                        <option value="Science" class="text-black">Научные учреждения / Наука</option>
+                        <option value="Tools" class="text-black">Инструмент / Оборудование / Инструмент технический</option>
+                        <option value="Education" class="text-black">Образовательные учреждения / Карьера / Работа</option>
+                        <option value="Clothing" class="text-black">Магазин одежды и обуви</option>
+                        <option value="Security" class="text-black">Охранные предприятия / Безопасность</option>
+                        <option value="FoodProduction" class="text-black">Производство и продажа продуктов питания / Напитки</option>
+                        <option value="Delivery" class="text-black">Производство / Курьерские службы / Поставки</option>
+                        <option value="MiscServices" class="text-black">Разные услуги / Прочее</option>
+                        <option value="Printing" class="text-black">Полиграфическая и рекламная продукция</option>
+                        <option value="SocialHelp" class="text-black">Социальная помощь / Благотворительность</option>
+                        <option value="Sports" class="text-black">Спортивная сфера / Туризм / Отдых</option>
+                        <option value="Media" class="text-black">СМИ / Средства массовой информации</option>
+                        <option value="BuildingMaterials" class="text-black">Строительные материалы / Материалы отделочные</option>
+                        <option value="Construction" class="text-black">Строительная сфера / Ремонт / Недвижимость</option>
+                        <option value="Textiles" class="text-black">Текстиль / Предметы для интерьера</option>
+                        <option value="Animals" class="text-black">Все для животных / Ветеринария</option>
+                        <option value="ShoppingCentres" class="text-black">Торговые центры, комплексы / Спецмагазины</option>
+                        <option value="Transport" class="text-black">Транспортная сфера, Грузовые перевозки</option>
+                        <option value="Tourism" class="text-black">Туризм / Гостиницы / Базы отдыха</option>
+                        <option value="HouseholdGoods" class="text-black">Хозяйственные товары / Канцелярия / Упаковка</option>
+                        <option value="Electronics" class="text-black">Электротехника / Электроника</option>
+                        <option value="Energy" class="text-black">Энергетика / Электростанции</option>
+                        <option value="Legal" class="text-black">Юридические / Бизнес / Финансовые услуги</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="leads">Введите количество лидов:</label>
+                    <input type="number" id="leads" class="form-control" placeholder="Введите число" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="averageCheck">Введите средний чек:</label>
+                    <input type="number" id="averageCheck" class="form-control" placeholder="Введите среднюю сумму"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tariffPlan">Выберите тарифный план:</label>
+                    <select id="tariffPlan" class="form-control">
+                        <option value="none">Без тарифа</option>
+                        <option value="startup">Легок на подъем</option>
+                        <option value="growth">Широко шагая</option>
+                        <option value="premium">Дивный новый бренд</option>
+                    </select>
+                </div>
+
+                <button id="calculateButton" class="btn btn-primary">Рассчитать прибыль</button>
+            </div>
+            <div class="result-container">
+                <div class="chart-container">
+                    <img id="chartImage" src="./images/WFEFdR4148w.jpg" alt="Восходящий график" class="chart-image">
+                </div>
+                <div id="result" class="result hidden">
+                    <p id="profitOutput"></p>
+                    <p id="profitWithoutTariff"></p>
+                    <p id="profitWithTariff"></p>
+                    <p id="profitDifference"></p>
+                </div>
+
+                <!-- Новый текст и кнопка для заявки -->
+                <div id="requestSection" class="hidden">
+                    <p class="mt-3">Все цифры приведены в качестве примера, для более точных данных оставьте заявку:</p>
+                    <button id="requestButton" class="btn btn-secondary">Оставить заявку</button>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
 </body>
